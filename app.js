@@ -15,7 +15,7 @@ import { Confirm } from './mongo';
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
 
 //서버 실행
-const PORT = config.PORT || 5000;
+const PORT = config.PORT || 9000;
 app.listen(PORT, function() {
     console.log('server running in ' + PORT);
 });
