@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 //module setting
-// import { Users, Groups, Boards, Scans } from './mongo';
+import { Confirm } from './mongo';
 
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
 
@@ -20,4 +20,5 @@ app.listen(PORT, function() {
     console.log('server running in ' + PORT);
 });
 
+require('./routes/auth/phone')(app, Confirm);
 // require('./routes/index')(app);
