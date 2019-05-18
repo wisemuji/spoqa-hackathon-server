@@ -1,0 +1,38 @@
+{
+  "name": "spoqa-hackathon",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000p\u0000o\u0000q\u0000a\u0000-\u0000h\u0000a\u0000c\u0000k\u0000a\u0000t\u0000h\u0000o\u0000n\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install --save-dev babel-cli babel-preset-es2015 babel-preset-stage-2"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "express": "^3.21.2",
+    "mongoose": "*",
+    "nodemon": "^1.18.10",
+    "randomstring": "^1.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisemuji/spoqa-hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wisemuji/spoqa-hackathon/issues"
+  },
+  "homepage": "https://github.com/wisemuji/spoqa-hackathon#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1"
+  }
+}
