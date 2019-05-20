@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import config from './config';
+import cors from 'cors';
 let app = express();
 
 app.use(bodyParser.json());
@@ -8,6 +9,9 @@ app.use(bodyParser.urlencoded({
     limit: '1gb',
     extended: false
 }));
+
+// CORS 설정
+app.use(cors());
 
 //module setting
 import { Confirm } from './mongo';
